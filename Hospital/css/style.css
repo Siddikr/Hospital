@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root{
+    --ff1:'Open Sans', sans-serif;
+    --w:#fff;
+}
+
+.text_centar{
+    text-align: center;
+}
+
+.clr{
+    clear: both;
+}
+
+/* =========================================================
+                    common css end
+============================================================*/
+
+/* =========================================================
+                    header part start
+============================================================*/
+#header{
+    padding: 13px;
+    background: #fff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header_text h4{
+    line-height: 88px;
+    color: #b76262;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--ff1);
+}
+/* =========================================================
+                    header part end
+============================================================*/
+
+/* =========================================================
+                    menu part start
+============================================================*/
+#menu{
+    height: 50px;
+    background: linear-gradient(to bottom, #ae1010 0%, #cf0511 100%);
+}
+
+.menu_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_menu{
+    width: 85%;
+}
+
+.main_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_menu ul li{
+    /* padding-left:26px; */
+}
+
+.main_menu ul li a{
+    color: var(--w);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--ff1);
+    line-height: 50px;
+
+}
+
+.main_menu ul li a:hover{
+    background: #f18d26;
+}
+
+.icon{
+    width: 15%;
+
+}
+
+.icon ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  
+}
+
+.icon ul li{
+    margin-left: 20px;
+    
+}
+
+.icon ul li i{
+    color: violet;
+    position: relative;
+    z-index: 1;
+    line-height: 50px;
+}
+
+.icon ul i::after{
+    position: absolute;
+    content: '';
+    left: -5px;
+    top: 11px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+/* =========================================================
+                    menu part end
+============================================================*/
+
+/* =========================================================
+                    banner part start
+============================================================*/
+#banner{
+    padding: 74px;
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner_text{
+    width: 443px;
+}
+
+.banner_text h4{
+    color: #215a6d;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--ff1);
+}
+
+.banner_text h3{
+    color: #215a6d;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: var(--ff1);
+}
+
+.banner_text p{
+    width: 275px;
+    color: #215a6d;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ff1);
+}
+
+.banner_text p span{
+    display:block;
+}
+
+.banner_text a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--ff1);
+    margin-top: 39px;
+    padding: 15px;
+    padding-left: 26px;
+    padding-right: 24px;
+    background: red;
+    border-radius: 30px;
+    transition: all linear .3s;
+}
+
+.banner_text a:hover{
+    background: #92c7a3;
+}
+/* =========================================================
+                    banner part end
+============================================================*/
+
+/* =========================================================
+                    service part start
+============================================================*/
+#service{
+    padding: 48px;
+}
+
+.ser_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ser_col{
+    width: 30%;
+}
+
+.hed_text h2{
+   color: #3ca2a2;
+   font-size: 24px;
+   font-weight: 600;
+   font-family: var(--ff1);
+    margin-bottom: 26px;
+}
+
+.hed_text p{
+    color: #215a6d;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--ff1);
+    margin-top: 12px;
+ }
+
+ .hed_text a{
+    color: #92c7a3;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ff1);
+    margin-top: 24px;
+ }
+
+ .hed_text a i{
+    color: #d64a50;
+    margin-right: 10px;
+    /* font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ff1); */
+ }
+/* =========================================================
+                    service part end
+============================================================*/
+
+/* =========================================================
+                    Featured part start
+============================================================*/
+#Featured{
+    padding: 29px;
+    background: #dfece6;
+}
+
+.Feu_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .col{
+    width: 40%;
+} */
+
+.feu_text h3{
+    border-bottom:1px solid rgb(0, 0, 0) ;
+    margin-bottom: 30px ;
+    position: relative;
+}
+
+.feu_text h3::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom:-1px;
+    width: 54px;
+    height: 2px;
+    background: red;
+    
+}
+
+.feu_text {
+    width: 46.7%;
+}
+
+.feu_text ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.feu_text ul li{
+    width: 470px;
+    height: 50px;
+    background: #fff;
+    padding-left: 15px;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.feu_text ul li i{
+    /* align-items: end; */
+    float: right;
+    line-height: 50px;
+    padding: 0 15px;
+    background: red;
+}
+
+.feu_text ul li i:nth-child(4){
+    border-bottom: 0;
+}
+
+.video{
+    width: 46.7%;
+}
+
+.video img{
+    width: 100%;
+    max-width: 100%;
+}
+/* =========================================================
+                    Featured part end
+============================================================*/
+
+/* =========================================================
+                    news part start
+============================================================*/
+#news{
+    padding: 65px;
+}
+
+.news_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news_col{
+    width: 30%;
+}
+
+.news_text h2{
+    border-bottom:1px solid rgb(0, 0, 0) ;
+    
+    position: relative;
+}
+
+.news_text h2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom:-1px;
+    width: 54px;
+    height: 2px;
+    background: red;
+    
+}
+
+.news_text h3{
+    color: #3ca2a2;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--ff1);
+    margin-top: 30px ;
+}
+
+.news_text p{
+    color: #3ca2a2;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--ff1);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.news_text  .border{
+    border-bottom: none;
+}
+
+.news_text ul{
+    padding-top: 30px;
+}
+
+.news_text ul li{
+    padding-bottom: 17px;
+    color: #215a6d;
+}
+
+.news_text ul li i{
+    padding-right: 10px;
+    color: red;
+}
+
+.news_text ul a{
+    padding-top: 40px;
+    color: #215a6d;
+}
+
+.news_text ul a i{
+    color: red;
+    padding-right: 6px;
+}
+
+.news_text a i{
+    color: red;
+    padding-right: 6px;
+}
+
+.news_text a{
+    padding-top: 23px;
+    color: #215a6d;
+}
+
+.images ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.images a{
+    padding-top: 58px;
+}
+/* =========================================================
+                    news part end
+============================================================*/
+
+/* =========================================================
+                    Doctors part start
+============================================================*/
+#doctors{
+    padding: 30px;
+}
+
+.doc_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.doc_col{
+    width: 31.5%;
+}
+
+.doc_img img{
+    width: 100%;
+    max-width:100%;
+    padding-top: 30px;
+}
+
+.doc_text h3{
+    color: #3ca2a2;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--ff1);
+    padding-top: 15px;
+}
+
+.doc_text p{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--ff1);
+}
+
+.doc_text p span{
+    color: #cf0511;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--ff1);
+}
+/* =========================================================
+                    Doctors part end
+============================================================*/
+
+/* ==========================================================
+                    footer part start
+=========================================================== */
+#footer{
+    padding: 23px;
+    background: #000;
+}
+
+.foot_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot_col{
+    width: 25%;
+}
+
+.foot_text h3{
+    color: #fff;
+    padding-top: 46px;
+}
+
+.foot_text ul li{
+    color: #fff;
+    padding-top: 15px;
+}
+
+.foot_text ul li i{
+    color: rgb(248, 12, 12);
+    padding-right: 9px;
+}
+/* ==========================================================
+                    footer part end
+=========================================================== */
+
+/* ==========================================================
+                     footer_end part start
+=========================================================== */
+#end{
+    padding: 15px;
+    background: red;
+}
+/* ==========================================================
+                     footer_end part end
+=========================================================== */
